@@ -2,10 +2,10 @@
 
 using BlockSDK;
 
-const string API_TOKEN = "YOU_API_TOKEN";
-
-var blocksdk = new BlockSDK.Ethereum(API_TOKEN);
-var response = await blocksdk.GetBlockChainInfo();
-
-
-Console.WriteLine("Hello, World!");
+const string API_TOKEN = "YOU_TOKEN";
+var ethereumClient = new BlockSDK.Ethereum(API_TOKEN);
+var result = await ethereumClient.GetBlockChainInfo();
+foreach (var item in result)
+{
+    Console.WriteLine(item);
+}

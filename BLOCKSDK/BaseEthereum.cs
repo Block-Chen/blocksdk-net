@@ -32,7 +32,7 @@ namespace BlockSDK
 
         public async Task<Dictionary<string, object>> GetAddressInfo(Dictionary<string, object> request)
         {
-            return await this.Request("GET", $"/address/{request["address"]}", request);
+            return await this.Request("GET", $"/address/{request["address"]}/info", request);
         }
 
         public async Task<Dictionary<string, object>> GetAddressBalance(Dictionary<string, object> request)

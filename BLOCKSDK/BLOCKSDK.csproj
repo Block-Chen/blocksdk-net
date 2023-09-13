@@ -2,11 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+	<Version>1.0.1</Version>
     <Nullable>enable</Nullable>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
-
+  <ItemGroup>
+	<None Include="../LICENSE.txt" Pack="true" PackagePath="" />
+	<None Include="../README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>
